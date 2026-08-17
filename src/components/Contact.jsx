@@ -15,8 +15,8 @@ export default function Contact() {
 
                     <div className="space-y-6">
                         <ContactLink href="mailto:awais.ahmadbsh@gmail.com" icon={<Mail className="w-5 h-5" />} label="awais.ahmadbsh@gmail.com" />
-                        <ContactLink href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQH8tJhnpqGDPgAAAaARUnoIWgKskk9vvVV8NCrjKk9thb7M5PRGJ5CC_1MKJc0noI6_CBUWBNraYLN4JTFic1HlX8N6bzWb2K2iRwuhe7WpW_4CS2jP8dKQDBM4xQ6lKWmivQc=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fawais-ahmad-5094aa395%3Futm_source%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dmember_android" icon={<Linkedin className="w-5 h-5" />} label=" LinkedIn" />
-                        <ContactLink href="https://github.com/AwAiS-ahmd" target="blank" icon={<Github className="w-5 h-5" />} label="GitHub" />
+                        <ContactLink href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQH8tJhnpqGDPgAAAaARUnoIWgKskk9vvVV8NCrjKk9thb7M5PRGJ5CC_1MKJc0noI6_CBUWBNraYLN4JTFic1HlX8N6bzWb2K2iRwuhe7WpW_4CS2jP8dKQDBM4xQ6lKWmivQc=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fawais-ahmad-5094aa395%3Futm_source%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dmember_android" target="_blank" icon={<Linkedin className="w-5 h-5" />} label=" LinkedIn" />
+                        <ContactLink href="https://github.com/AwAiS-ahmd" target="_blank" icon={<Github className="w-5 h-5" />} label="GitHub" />
                     </div>
                 </div>
 
@@ -70,10 +70,12 @@ export default function Contact() {
     );
 }
 
-function ContactLink({ href, icon, label }) {
+function ContactLink({ href, icon, label, target }) {
     return (
         <a
             href={href}
+            target={target}
+            rel={target === "_blank" ? "noopener noreferrer" : undefined}
             className="flex items-center gap-4 text-text-secondary hover:text-accent transition-colors group w-fit"
         >
             <div className="w-10 h-10 rounded-full bg-bg-secondary subtle-border flex items-center justify-center group-hover:border-accent/40 group-hover:bg-accent/5 transition-colors">

@@ -1,7 +1,6 @@
 import { Mail, FileText, Download } from "lucide-react";
 import { Github, Linkedin } from "./icons";
-// import profileImage from "/src/assets/Profile.jpg";
-
+import profileImage from "../assets/Profile.jpg";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
@@ -81,9 +80,9 @@ export default function Hero() {
           <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 to-accent-secondary/20 rounded-2xl md:rounded-3xl rotate-6 blur-lg"></div>
           <div className="relative w-full h-full rounded-2xl md:rounded-3xl overflow-hidden subtle-border bg-bg-secondary flex items-center justify-center p-2 shadow-2xl">
             <img
-              src="/src/assets/Profile.jpg"
+              src={profileImage}
               alt="Awais Ahmad"
-              className="w-full h-full object-cover object-center rounded-xl md:rounded-2xl"
+              className="w-full h-full object-cover object-top rounded-xl md:rounded-2xl"
             />
           </div>
         </div>
@@ -105,6 +104,8 @@ function SocialLink({ href, icon, label }) {
     <a
       href={href}
       title={label}
+      target="_blank"
+      rel="noopener noreferrer"
       className="p-3 rounded-full bg-bg-secondary subtle-border text-text-secondary hover:text-accent hover:-translate-y-1 transition-all"
     >
       {icon}
