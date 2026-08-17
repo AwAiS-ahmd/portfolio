@@ -10,7 +10,7 @@ export default function Projects() {
                     <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">Featured Work</h2>
                     <div className="w-12 h-1 bg-accent rounded-full mb-6"></div>
                     <p className="text-lg text-text-secondary leading-relaxed">
-                        A selection of projects I've built while learning and experimenting with modern web technologies.
+                        A selection of projects demonstrating my experience with modern frontend development and practical web application development.
                     </p>
                 </div>
 
@@ -20,12 +20,7 @@ export default function Projects() {
                     ))}
                 </div>
 
-                {/* More Projects Message */}
-                <div className="mt-20 pt-10 border-t border-border flex flex-col items-center justify-center text-center">
-                    <p className="text-text-muted text-sm md:text-base max-w-xl mx-auto italic">
-                        Currently building larger backend-focused applications with Node.js, databases and APIs.
-                    </p>
-                </div>
+
 
             </div>
         </section>

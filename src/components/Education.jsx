@@ -22,10 +22,10 @@ export default function Education() {
 
                             <div className="flex flex-col">
                                 <h3 className="text-2xl font-bold text-text-primary mb-1">Bachelor of Science in Computer Science</h3>
-                                <p className="text-lg text-text-secondary font-medium mb-4">[University Name] • 2022 — 2026</p>
+                                <p className="text-lg text-text-secondary font-medium mb-4">[University Name] · 2022 — 2026</p>
 
                                 <p className="text-text-muted leading-relaxed">
-                                    Currently completing my final-year project, focusing on scalable software architecture and full-stack development.
+                                    Currently completing my final-year project with a focus on full-stack web development.
                                 </p>
                             </div>
 
@@ -50,7 +50,7 @@ export default function Education() {
                             <ArrowRight className="w-4 h-4" />
                         </a>
                         <a href="/resume.pdf" download className="px-6 py-3 rounded-lg subtle-border bg-bg-primary text-text-primary font-medium hover:bg-black/5 dark:hover:bg-white/5 transition-all hover:-translate-y-1 flex items-center gap-2">
-                            Download PDF
+                            Download Resume
                         </a>
                     </div>
 

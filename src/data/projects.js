@@ -1,8 +1,8 @@
 export const projects = [
     {
         id: 1,
-        title: "TODO: Add First Frontend Project Name",
-        description: "TODO: Add description. E.g., A frontend web application demonstrating advanced React patterns and thoughtful UI design, integrated with mock data.",
+        title: "Project Name",
+        description: "One concise sentence explaining what the application does and what problem it solves.",
         technologies: ["React", "Tailwind CSS", "Vite"],
         image: "/assets/projects/project-1.png",
         liveUrl: "#",
@@ -10,8 +10,8 @@ export const projects = [
     },
     {
         id: 2,
-        title: "TODO: Add Second Frontend Project Name",
-        description: "TODO: Add description. E.g., A responsive landing page showcasing performance optimization and accessibility best practices.",
+        title: "Project Name",
+        description: "One concise sentence explaining what the application does and what problem it solves.",
         technologies: ["HTML5", "CSS3", "JavaScript"],
         image: "/assets/projects/project-2.png",
         liveUrl: "#",

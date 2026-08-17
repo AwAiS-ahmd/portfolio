@@ -1,4 +1,4 @@
-import { skills, currentlyLearning } from '../data/skills';
+import { skills, areasOfFocus } from '../data/skills';
 
 export default function Skills() {
     return (
@@ -31,16 +31,16 @@ export default function Skills() {
                     </div>
                 </div>
 
-                {/* Currently Learning */}
+                {/* Areas of Focus */}
                 <div className="lg:col-span-4 mt-8 lg:mt-0">
                     <div className="subtle-border bg-bg-secondary p-8 rounded-2xl shadow-sm hover:border-text-muted/30 transition-colors h-full">
-                        <h3 className="text-xl font-bold text-text-primary mb-6">Currently Learning</h3>
+                        <h3 className="text-xl font-bold text-text-primary mb-6">Areas of Focus</h3>
                         <p className="text-sm text-text-muted mb-6 leading-relaxed">
                             Deepening my knowledge of backend engineering, databases, system design, and AI-powered applications.
                         </p>
 
                         <div className="flex flex-wrap gap-2">
-                            {currentlyLearning.map(topic => (
+                            {areasOfFocus.map(topic => (
                                 <span
                                     key={topic}
                                     className="px-3 py-1.5 bg-bg-primary subtle-border rounded-md text-xs font-medium text-accent shadow-sm"

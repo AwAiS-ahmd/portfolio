@@ -19,15 +19,13 @@ export default function Hero() {
             Hi, I'm Awais.
             <br />
             <span className="text-text-secondary text-[clamp(2rem,4vw,3.5rem)] font-bold">
-              CS Student & <br className="hidden md:block" />
-              Aspiring Backend Engineer
+              Computer Science Student & <br className="hidden md:block" />
+              Backend-Focused Developer
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-text-muted leading-relaxed max-w-xl">
-            I build web applications with JavaScript and React, while developing
-            deeper expertise in backend engineering, databases, and modern web
-            development.
+            I build web applications with JavaScript and React, with a growing focus on backend engineering, REST APIs, databases, and scalable web applications.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 mt-4">
@@ -38,21 +36,11 @@ export default function Hero() {
               View My Work
             </a>
             <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="px-6 py-3 rounded-lg subtle-border bg-bg-secondary text-text-primary font-medium hover:bg-black/5 dark:hover:bg-white/5 transition-all hover:-translate-y-1 flex items-center gap-2"
             >
-              <FileText className="w-5 h-5" />
-              View Resume
-            </a>
-            <a
-              href="/resume.pdf"
-              download="Awais_Ahmad_Resume.pdf"
-              className="px-6 py-3 rounded-lg subtle-border bg-bg-secondary text-text-primary font-medium hover:bg-black/5 dark:hover:bg-white/5 transition-all hover:-translate-y-1 flex items-center gap-2"
-            >
-              <Download className="w-5 h-5" />
-              Download Resume
+              <Mail className="w-5 h-5" />
+              Contact Me
             </a>
           </div>
 

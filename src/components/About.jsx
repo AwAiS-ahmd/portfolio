@@ -14,10 +14,7 @@ export default function About() {
                             I'm a Computer Science student interested in backend engineering and building practical web applications.
                         </p>
                         <p>
-                            I've been working with JavaScript, React, Node.js and databases while strengthening my understanding of APIs, authentication, data structures, and software architecture.
-                        </p>
-                        <p>
-                            I enjoy learning by building, and I'm currently focused on turning my knowledge into larger, real-world projects.
+                            I work with JavaScript, React, Node.js, and databases, with a particular interest in building reliable APIs and backend systems. I'm focused on developing practical applications that solve real problems and turning what I learn into production-oriented projects.
                         </p>
                     </div>
                 </div>
@@ -30,25 +27,25 @@ export default function About() {
 
                             <JourneyStep
                                 title="Computer Science"
-                                description="Core fundamentals, algorithms, and data structures."
+                                description="Built a foundation in programming, algorithms, data structures, and software engineering."
                                 active={false}
                             />
 
                             <JourneyStep
                                 title="Web Development"
-                                description="HTML, CSS, JavaScript, and building accessible UI."
+                                description="Developed responsive web interfaces with HTML, CSS, JavaScript, and React."
                                 active={false}
                             />
 
                             <JourneyStep
-                                title="React & Modern JS"
-                                description="Component architecture, state management, and SPA development."
+                                title="Modern Frontend"
+                                description="Worked with component-based architecture, routing, state management, and API integration."
                                 active={false}
                             />
 
                             <JourneyStep
                                 title="Backend Engineering"
-                                description="Node.js, databases, APIs, and scalable architecture."
+                                description="Building REST APIs with Node.js and Express, working with SQL and NoSQL databases, authentication, and backend architecture."
                                 active={true}
                                 isLast={true}
                             />

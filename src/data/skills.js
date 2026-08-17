@@ -2,14 +2,13 @@ export const skills = {
     Languages: ["JavaScript", "Python", "SQL"],
     Frontend: ["React", "HTML", "CSS", "Tailwind CSS", "Bootstrap"],
     Backend: ["Node.js", "Express.js", "REST APIs"],
-    Databases: ["MongoDB", "Mongoose", "PostgreSQL", "SQL"],
+    Databases: ["PostgreSQL", "MongoDB", "Mongoose"],
     Tools: ["Git", "GitHub", "VS Code", "npm"]
 };
 
-export const currentlyLearning = [
+export const areasOfFocus = [
     "TypeScript",
     "Backend Architecture",
-    "PostgreSQL",
     "Docker",
     "Testing",
     "System Design",

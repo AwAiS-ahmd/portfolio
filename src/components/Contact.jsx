@@ -10,7 +10,7 @@ export default function Contact() {
                 <div className="flex flex-col">
                     <h2 className="text-3xl md:text-5xl font-bold text-text-primary mb-6 tracking-tight">Let's work together.</h2>
                     <p className="text-lg text-text-secondary leading-relaxed max-w-md mb-10">
-                        I'm currently open to internship, junior developer, and freelance opportunities. Feel free to reach out.
+                        I'm open to internship, junior developer, and freelance opportunities. If you have a project or opportunity in mind, feel free to reach out.
                     </p>
 
                     <div className="space-y-6">
@@ -28,7 +28,7 @@ export default function Contact() {
                             <input
                                 type="text"
                                 id="name"
-                                placeholder="John Doe"
+                                placeholder="Your Name"
                                 className="w-full bg-bg-primary subtle-border rounded-lg px-4 py-3 text-text-primary placeholder:text-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all"
                                 required
                             />
@@ -39,7 +39,7 @@ export default function Contact() {
                             <input
                                 type="email"
                                 id="email"
-                                placeholder="john@example.com"
+                                placeholder="your.email@example.com"
                                 className="w-full bg-bg-primary subtle-border rounded-lg px-4 py-3 text-text-primary placeholder:text-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all"
                                 required
                             />
@@ -50,7 +50,7 @@ export default function Contact() {
                             <textarea
                                 id="message"
                                 rows="4"
-                                placeholder="Hello Awais..."
+                                placeholder="Hi Awais, I'd like to discuss..."
                                 className="w-full bg-bg-primary subtle-border rounded-lg px-4 py-3 text-text-primary placeholder:text-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all resize-none"
                                 required
                             ></textarea>

@@ -8,7 +8,7 @@ export default function Footer() {
 
                 <div className="flex flex-col items-center md:items-start space-y-2">
                     <span className="text-lg font-bold text-text-primary">Awais Ahmad</span>
-                    <span className="text-sm text-text-muted">CS Student & Aspiring Backend Engineer</span>
+                    <span className="text-sm text-text-muted">CS Student & Backend-Focused Developer</span>
                 </div>
 
                 <div className="flex items-center gap-6">
@@ -24,7 +24,7 @@ export default function Footer() {
                 </div>
 
                 <div className="flex flex-col flex-wrap md:flex-nowrap items-center md:items-end justify-center md:justify-end gap-1 text-xs text-text-muted text-center md:text-right">
-                    <span>&copy; {new Date().getFullYear()} Awais Ahmad</span>
+                    <span>&copy; 2026 Awais Ahmad</span>
                     <span>Built with React + Tailwind CSS</span>
                 </div>
 
