@@ -36,7 +36,7 @@ export default function ThemeToggle() {
     return (
         <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-text-secondary hover:text-text-primary dark:text-text-secondary dark:hover:text-text-primary"
+            className="p-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/5 transition-colors duration-200 text-text-secondary hover:text-text dark:text-text-secondary dark:hover:text-text focus-visible:ring-2 focus-visible:ring-accent outline-none"
             aria-label="Toggle theme"
         >
             {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}

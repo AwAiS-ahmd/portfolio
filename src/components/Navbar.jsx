@@ -23,11 +23,11 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-bg-primary/80 backdrop-blur-md subtle-border shadow-sm' : 'bg-transparent py-2'}`}>
+        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-bg/90 backdrop-blur-md border-b border-border shadow-[0_1px_2px_rgba(0,0,0,0.02)]' : 'bg-transparent py-2'}`}>
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="flex items-center justify-between h-16 lg:h-20">
                     {/* Logo */}
-                    <a href="#" className="text-xl font-bold tracking-tight text-text-primary">
+                    <a href="#" className="font-heading text-xl font-bold tracking-tight text-text focus-visible:ring-2 focus-visible:ring-accent outline-none rounded-md px-1">
                         Awais Ahmad<span className="text-accent">.</span>
                     </a>
 
@@ -35,7 +35,7 @@ export default function Navbar() {
                     <div className="hidden md:flex items-center gap-8">
                         <div className="flex items-center gap-6 text-sm font-medium text-text-secondary">
                             {navLinks.map((link) => (
-                                <a key={link.name} href={link.href} className="hover:text-accent transition-colors">
+                                <a key={link.name} href={link.href} className="hover:text-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent outline-none rounded-md px-1 py-0.5">
                                     {link.name}
                                 </a>
                             ))}
@@ -49,7 +49,7 @@ export default function Navbar() {
                         <ThemeToggle />
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            className="text-text-secondary hover:text-text-primary p-1"
+                            className="text-text-secondary hover:text-text p-1 focus-visible:ring-2 focus-visible:ring-accent outline-none rounded-md"
                             aria-label="Toggle menu"
                         >
                             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -60,12 +60,12 @@ export default function Navbar() {
 
             {/* Mobile Nav */}
             {isMobileMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-bg-primary subtle-border border-t shadow-lg py-4 px-6 flex flex-col gap-4 animate-fade-in-up">
+                <div className="md:hidden absolute top-full left-0 w-full bg-surface border-b border-border py-4 px-6 flex flex-col gap-4 animate-fade-in-up">
                     {navLinks.map((link) => (
                         <a
                             key={link.name}
                             href={link.href}
-                            className="text-text-secondary hover:text-accent font-medium text-lg"
+                            className="text-text-secondary hover:text-accent font-medium text-lg focus-visible:ring-2 focus-visible:ring-accent outline-none rounded-md px-2 py-1"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             {link.name}

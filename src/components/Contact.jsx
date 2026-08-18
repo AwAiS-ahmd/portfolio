@@ -8,7 +8,7 @@ export default function Contact() {
 
                 {/* Contact Info */}
                 <div className="flex flex-col">
-                    <h2 className="text-3xl md:text-5xl font-bold text-text-primary mb-6 tracking-tight">Let's work together.</h2>
+                    <h2 className="text-3xl md:text-5xl font-heading font-bold text-text mb-6 tracking-tight">Let's work together.</h2>
                     <p className="text-lg text-text-secondary leading-relaxed max-w-md mb-10">
                         I'm open to internship, junior developer, and freelance opportunities. If you have a project or opportunity in mind, feel free to reach out.
                     </p>
@@ -21,7 +21,7 @@ export default function Contact() {
                 </div>
 
                 {/* Contact Form */}
-                <div className="bg-bg-secondary subtle-border rounded-2xl p-8 max-w-lg w-full ml-auto">
+                <div className="bg-surface border border-border rounded-2xl p-8 max-w-lg w-full ml-auto">
                     <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
                         <div className="flex flex-col gap-2">
                             <label htmlFor="name" className="text-sm font-medium text-text-secondary">Name</label>
@@ -29,7 +29,7 @@ export default function Contact() {
                                 type="text"
                                 id="name"
                                 placeholder="Your Name"
-                                className="w-full bg-bg-primary subtle-border rounded-lg px-4 py-3 text-text-primary placeholder:text-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all"
+                                className="w-full bg-bg border border-border rounded-lg px-4 py-3 text-text placeholder:text-text-secondary focus:outline-none focus:ring-2 focus:ring-accent transition-all"
                                 required
                             />
                         </div>
@@ -40,7 +40,7 @@ export default function Contact() {
                                 type="email"
                                 id="email"
                                 placeholder="your.email@example.com"
-                                className="w-full bg-bg-primary subtle-border rounded-lg px-4 py-3 text-text-primary placeholder:text-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all"
+                                className="w-full bg-bg border border-border rounded-lg px-4 py-3 text-text placeholder:text-text-secondary focus:outline-none focus:ring-2 focus:ring-accent transition-all"
                                 required
                             />
                         </div>
@@ -51,14 +51,14 @@ export default function Contact() {
                                 id="message"
                                 rows="4"
                                 placeholder="Hi Awais, I'd like to discuss..."
-                                className="w-full bg-bg-primary subtle-border rounded-lg px-4 py-3 text-text-primary placeholder:text-text-muted focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all resize-none"
+                                className="w-full bg-bg border border-border rounded-lg px-4 py-3 text-text placeholder:text-text-secondary focus:outline-none focus:ring-2 focus:ring-accent transition-all resize-none"
                                 required
                             ></textarea>
                         </div>
 
                         <button
                             type="submit"
-                            className="w-full bg-bg-primary text-text-primary subtle-border hover:bg-accent hover:border-accent hover:text-white rounded-lg px-6 py-3 font-medium transition-all duration-300 mt-2"
+                            className="w-full bg-bg text-text border border-border hover:bg-accent hover:border-accent hover:text-white rounded-lg px-6 py-3 font-medium transition-all duration-300 mt-2 focus-visible:ring-2 focus-visible:ring-accent outline-none"
                         >
                             Send Message
                         </button>
@@ -76,9 +76,9 @@ function ContactLink({ href, icon, label, target }) {
             href={href}
             target={target}
             rel={target === "_blank" ? "noopener noreferrer" : undefined}
-            className="flex items-center gap-4 text-text-secondary hover:text-accent transition-colors group w-fit"
+            className="flex items-center gap-4 text-text-secondary hover:text-accent transition-colors group w-fit focus-visible:ring-2 focus-visible:ring-accent outline-none rounded-md px-1 py-0.5"
         >
-            <div className="w-10 h-10 rounded-full bg-bg-secondary subtle-border flex items-center justify-center group-hover:border-accent/40 group-hover:bg-accent/5 transition-colors">
+            <div className="w-10 h-10 rounded-full bg-surface border border-border flex items-center justify-center group-hover:border-accent/40 group-hover:bg-accent/5 transition-colors">
                 {icon}
             </div>
             <span className="font-medium text-base">{label}</span>

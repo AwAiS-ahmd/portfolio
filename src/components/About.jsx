@@ -6,7 +6,7 @@ export default function About() {
             <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
 
                 <div className="lg:col-span-5 flex flex-col gap-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-2">About Me</h2>
+                    <h2 className="text-3xl md:text-4xl font-heading font-bold text-text mb-2">About Me</h2>
                     <div className="w-12 h-1 bg-accent rounded-full mb-6"></div>
 
                     <div className="space-y-6 text-text-secondary text-lg leading-relaxed">
@@ -20,8 +20,8 @@ export default function About() {
                 </div>
 
                 <div className="lg:col-span-6 lg:col-start-7 pt-8 lg:pt-0">
-                    <div className="subtle-border bg-bg-secondary p-8 rounded-2xl md:p-10 shadow-sm transition-all hover:border-text-muted/30">
-                        <h3 className="text-xl font-bold text-text-primary mb-8 tracking-tight">Developer Journey</h3>
+                    <div className="bg-surface border border-border p-8 rounded-2xl md:p-10 transition-all hover:border-text-secondary">
+                        <h3 className="text-xl font-heading font-bold text-text mb-8 tracking-tight">Developer Journey</h3>
 
                         <div className="relative border-l border-border ml-3 space-y-8">
 
@@ -63,11 +63,11 @@ function JourneyStep({ title, description, active, isLast }) {
     return (
         <div className="relative pl-8">
             {/* Timeline dot */}
-            <span className={`absolute -left-[5px] top-1.5 w-[11px] h-[11px] rounded-full subtle-border ${active ? 'bg-accent border-accent shadow-[0_0_10px_rgba(124,58,237,0.5)]' : 'bg-bg-primary'}`}></span>
+            <span className={`absolute -left-[5px] top-1.5 w-[11px] h-[11px] rounded-full border border-border transition-colors ${active ? 'bg-accent border-accent' : 'bg-surface'}`}></span>
 
             <div className="flex flex-col gap-1">
-                <h4 className={`text-base font-semibold ${active ? 'text-accent' : 'text-text-primary'}`}>{title}</h4>
-                <p className="text-sm text-text-muted">{description}</p>
+                <h4 className={`text-base font-semibold ${active ? 'text-accent' : 'text-text'}`}>{title}</h4>
+                <p className="text-sm text-text-secondary">{description}</p>
             </div>
         </div>
     );
