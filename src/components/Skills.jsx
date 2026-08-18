@@ -1,9 +1,12 @@
 import { skills, areasOfFocus } from '../data/skills';
+import { useInView } from '../hooks/useInView';
 
 export default function Skills() {
+    const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+
     return (
-        <section id="skills" className="py-24 md:py-32 relative">
-            <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+        <section ref={ref} id="skills" className="py-24 md:py-32 relative">
+            <div className={`max-w-7xl mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 ${inView ? 'motion-safe:animate-fade-in-up' : 'motion-safe:opacity-0'}`}>
 
                 {/* Main Skills */}
                 <div className="lg:col-span-8 lg:pr-12">

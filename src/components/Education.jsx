@@ -1,10 +1,13 @@
 import { GraduationCap, ArrowRight } from 'lucide-react';
+import { useInView } from '../hooks/useInView';
 
 export default function Education() {
+    const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+
     return (
         <>
-            <section id="education" className="py-24 md:py-32 relative hidden md:block">
-                <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+            <section ref={ref} id="education" className="py-24 md:py-32 relative hidden md:block">
+                <div className={`max-w-7xl mx-auto px-6 lg:px-12 w-full ${inView ? 'motion-safe:animate-fade-in-up' : 'motion-safe:opacity-0'}`}>
 
                     <div className="flex flex-col items-center text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-heading font-bold text-text mb-4">Education</h2>

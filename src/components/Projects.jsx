@@ -1,10 +1,13 @@
 import { projects } from '../data/projects';
 import ProjectCard from './ProjectCard';
+import { useInView } from '../hooks/useInView';
 
 export default function Projects() {
+    const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+
     return (
-        <section id="projects" className="py-24 md:py-32 relative">
-            <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+        <section ref={ref} id="projects" className="py-24 md:py-32 relative">
+            <div className={`max-w-7xl mx-auto px-6 lg:px-12 w-full ${inView ? 'motion-safe:animate-fade-in-up' : 'motion-safe:opacity-0'}`}>
 
                 <div className="mb-16 md:mb-20 max-w-2xl">
                     <h2 className="text-3xl md:text-4xl font-heading font-bold text-text mb-4">Featured Work</h2>

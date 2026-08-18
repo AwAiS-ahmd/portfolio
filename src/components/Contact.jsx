@@ -1,10 +1,13 @@
 import { Mail } from 'lucide-react';
 import { Github, Linkedin } from './icons';
+import { useInView } from '../hooks/useInView';
 
 export default function Contact() {
+    const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+
     return (
-        <section id="contact" className="py-24 md:py-32 relative">
-            <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12">
+        <section ref={ref} id="contact" className="py-24 md:py-32 relative">
+            <div className={`max-w-7xl mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 ${inView ? 'motion-safe:animate-fade-in-up' : 'motion-safe:opacity-0'}`}>
 
                 {/* Contact Info */}
                 <div className="flex flex-col">

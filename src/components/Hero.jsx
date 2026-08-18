@@ -1,14 +1,18 @@
 import { Mail, FileText, Download } from "lucide-react";
 import { Github, Linkedin } from "./icons";
 import profileImage from "../assets/Profile.jpg";
+import { useInView } from "../hooks/useInView";
+
 export default function Hero() {
+  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section ref={ref} className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background Decor Removed for Flat Design */}
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
         {/* Text Content */}
-        <div className="flex flex-col gap-6 animate-fade-in-up">
+        <div className={`flex flex-col gap-6 ${inView ? 'motion-safe:animate-fade-in-up' : 'motion-safe:opacity-0'}`}>
           <p className="text-sm font-semibold tracking-widest text-accent uppercase flex items-center gap-3">
             <span className="w-8 h-px bg-accent"></span>
             Computer Science Student
@@ -63,7 +67,7 @@ export default function Hero() {
         </div>
 
         {/* Profile Image */}
-        <div className="relative mx-auto lg:ml-auto lg:mr-0 w-64 h-64 md:w-80 md:h-80 xl:w-96 xl:h-96 md:delay-150 motion-safe:animate-fade-in-up">
+        <div className={`relative mx-auto lg:ml-auto lg:mr-0 w-64 h-64 md:w-80 md:h-80 xl:w-96 xl:h-96 md:delay-150 ${inView ? 'motion-safe:animate-fade-in-up' : 'motion-safe:opacity-0'}`}>
           <div className="relative w-full h-full rounded-2xl md:rounded-3xl overflow-hidden border border-border bg-surface flex items-center justify-center p-2 hover:scale-[1.02] transition-transform duration-300">
             <img
               src={profileImage}

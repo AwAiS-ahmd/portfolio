@@ -60,7 +60,7 @@ export default function Navbar() {
 
             {/* Mobile Nav */}
             {isMobileMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-surface border-b border-border py-4 px-6 flex flex-col gap-4 animate-fade-in-up">
+                <div className="md:hidden absolute top-full left-0 w-full bg-surface border-b border-border py-4 px-6 flex flex-col gap-4 motion-safe:animate-fade-in-up">
                     {navLinks.map((link) => (
                         <a
                             key={link.name}

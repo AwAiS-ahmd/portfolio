@@ -1,9 +1,12 @@
 import { ArrowDown } from 'lucide-react';
+import { useInView } from '../hooks/useInView';
 
 export default function About() {
+    const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+
     return (
-        <section id="about" className="py-24 md:py-32 relative">
-            <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+        <section ref={ref} id="about" className="py-24 md:py-32 relative">
+            <div className={`max-w-7xl mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 ${inView ? 'motion-safe:animate-fade-in-up' : 'motion-safe:opacity-0'}`}>
 
                 <div className="lg:col-span-5 flex flex-col gap-4">
                     <h2 className="text-3xl md:text-4xl font-heading font-bold text-text mb-2">About Me</h2>
