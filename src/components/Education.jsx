@@ -6,7 +6,7 @@ export default function Education() {
 
     return (
         <>
-            <section ref={ref} id="education" className="py-24 md:py-32 relative hidden md:block">
+            <section ref={ref} id="education" className="py-24 md:py-32 relative">
                 <div className={`max-w-7xl mx-auto px-6 lg:px-12 w-full ${inView ? 'motion-safe:animate-fade-in-up' : 'motion-safe:opacity-0'}`}>
 
                     <div className="flex flex-col items-center text-center mb-16">
